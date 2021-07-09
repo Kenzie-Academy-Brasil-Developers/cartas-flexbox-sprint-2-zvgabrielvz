@@ -18,6 +18,7 @@ html {
     overflow: hidden;
     
     
+    
 }
 
 .card__description {
@@ -53,13 +54,17 @@ html {
 .cardGroup {
     /* display */
     display: flex;
-    flex-direction: row;
-  
+    flex-direction: column;
+    width: 320px;  
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
   }
-  
+
+
     .cardGroup__card {
       /* flex-grow, flex-shrink, flex-basis */
       flex-grow: 1;
@@ -82,16 +87,11 @@ html {
 
     @media (min-width: 768px) {
 
-      .card {
-        /* display, flex-direction */
+      .cardGroup {
+        /* display */
+        width: 710px;  
         display: flex;
-        flex-direction: column;
-        width: 710px;
-        border-radius: 4px;
-        overflow: hidden;
+        flex-direction: row;
         
-        
-    }
-
 
     }
